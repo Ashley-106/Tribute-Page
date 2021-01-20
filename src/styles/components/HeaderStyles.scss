@@ -1,0 +1,11 @@
+header {
+    padding: $s-size;
+    grid-column: 1/4;
+    font-family: 'Berkshire Swash', cursive;
+    border-bottom: solid lightgrey 5px;
+    color: lightgray;
+}
+
+span {
+    color: $lightGreen;
+}

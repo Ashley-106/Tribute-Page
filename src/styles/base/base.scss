@@ -1,0 +1,65 @@
+@import './settings.scss';
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $darkGrey;
+}
+
+.container {
+   display: flex;
+    padding: 0 1em 0 1em;
+    background-color: $darkGrey;
+    color: lightgrey;
+    line-height: 1.15;
+}
+
+.col {
+    padding: $s-size; 
+    flex: 1;  
+    margin: $s-size;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: $s-size;
+}
+
+@media(max-width: $tablet-breakpoint) {
+   
+    .container {
+        flex-direction: column;
+        margin: $s-size;
+    }
+
+    .col {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        margin-bottom: $s-size;
+        
+    }
+
+    .GeorgeOrwell {
+        order: 1;
+    }
+
+    .book1984, .AnimalFarm {
+        order: 2;
+    }
+
+    .r-top {
+        display: block;
+    }
+
+}
+
+@media(max-width: $mobile-breakpoint) {
+
+    .col {
+        width: 90%;
+    }
+}

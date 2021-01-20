@@ -1,0 +1,30 @@
+footer {
+    border-top: solid lightgrey 5px;
+    position: relative;
+}
+
+.r-top {
+    display: none;
+    position: absolute;
+    background-color: #A0E500;
+    color: black;
+    font-family: 'Berkshire Swash', cursive;
+    border-radius: 5px 5px 0 0;
+    padding: .5em;
+    right: 20px;
+    top: 30px;
+    text-align: center;
+}
+
+.r-top:hover {
+    cursor: pointer;
+}
+
+
+@media(max-width: $tablet-breakpoint) {
+   
+.r-top {
+    display: block;
+}
+
+}
